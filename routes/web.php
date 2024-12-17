@@ -134,6 +134,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('bookings', [BookingController::class, 'index'])->name('bookings.index');
     Route::get('bookings/{roomId}', [BookingController::class, 'show'])->name('bookings.show');
     Route::post('bookings', [BookingController::class, 'store'])->name('bookings.store');
-
+    //letok comment saje xd
 });
 require __DIR__ . '/auth.php';
