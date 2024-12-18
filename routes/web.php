@@ -14,6 +14,7 @@ use App\Http\Controllers\PrayerTimeController;
 use App\Http\Controllers\LogViewerController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\EmailController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -137,4 +138,11 @@ Route::middleware(['auth'])->group(function () {
     //letok comment saje xd
     //demon1
 });
+
+
+// Route::get('/emails', [EmailController::class, 'index'])->name('emails.index');
+// Route::post('/emails/send', [EmailController::class, 'send'])->name('emails.send');
+
+Route::get('/emails', [EmailController::class, 'paparBorangEmail'])->name('papar.borang.email');
+Route::post('/emails/send', [EmailController::class, 'hantarEmail'])->name('hantar.email');
 require __DIR__ . '/auth.php';

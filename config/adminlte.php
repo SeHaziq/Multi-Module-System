@@ -490,6 +490,18 @@ return [
             ],
         ],
 
+        [
+            'text' => 'Mail System',
+            'icon' => 'fas  fa-calendar',
+            'submenu' => [
+                [
+                    'text' => 'Send Email',
+                    'icon_color' => 'yellow',
+                    'url' => 'emails',
+                    'key' => 'emailss',
+                ],
+            ],
+        ],
         // [
         //     'text' => 'Dashboard',
         //     'icon_color' => 'red',
